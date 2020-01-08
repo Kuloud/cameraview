@@ -1,7 +1,7 @@
-[![Build Status](https://github.com/natario1/CameraView/workflows/Build/badge.svg?event=push)](https://github.com/natario1/CameraView/actions)
+[![Build Status](https://github.com/kuloud/CameraView/workflows/CI/badge.svg?event=push)](https://github.com/kuloud/CameraView/actions)
 [![Code Coverage](https://codecov.io/gh/natario1/CameraView/branch/master/graph/badge.svg)](https://codecov.io/gh/natario1/CameraView)
-[![Release](https://img.shields.io/github/release/natario1/CameraView.svg)](https://github.com/natario1/CameraView/releases)
-[![Issues](https://img.shields.io/github/issues-raw/natario1/CameraView.svg)](https://github.com/natario1/CameraView/issues)
+[![Release](https://img.shields.io/github/release/kuloud/CameraView.svg)](https://github.com/natario1/CameraView/releases)
+[![Issues](https://img.shields.io/github/issues-raw/kuloud/CameraView.svg)](https://github.com/natario1/CameraView/issues)
 [![Funding](https://img.shields.io/opencollective/all/CameraView.svg?colorB=r)](https://natario1.github.io/CameraView/extra/donate)
 
 &#10240;  <!-- Hack to add whitespace -->
@@ -85,8 +85,7 @@ Thanks to all our project backers... [[become a backer]](https://opencollective.
 ## Setup
 
 Please read the [official website](https://natario1.github.io/CameraView) for setup instructions and documentation.
-You might also be interested in our [changelog](https://natario1.github.io/CameraView/about/changelog)
-or in the [v1 migration guide](https://natario1.github.io/CameraView/extra/v1-migration-guide). 
+You might also be interested in our [changelog](https://natario1.github.io/CameraView/about/changelog).
 Using CameraView is extremely simple:
 
 ```xml

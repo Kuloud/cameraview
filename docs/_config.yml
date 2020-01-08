@@ -8,11 +8,11 @@ title: CameraView
 color: '#f8f8f8'
 description: A well documented, high-level Android interface that makes capturing pictures and videos easy, addressing all of the common issues and needs. # used by ourselves and by seo tag.
 disqus_shortname: 'cameraview'
-google_analytics_id: 'UA-155077779-1'
-google_site_verification: '4x49i17ABIrSvUl52SeL0-t0341aTnWWaC62-FYCRT4'
+google_analytics_id: ''
+google_site_verification: ''
 github: [metadata] # TODO What's this?
 github_repo: CameraView
-github_version: 2.6.0
+github_version: 1.0.0
 github_branch: master
 baseurl: '/CameraView' # Keep as an empty string if served up at the root
 collections:
@@ -32,10 +32,10 @@ screenshots:
 
 # Jekyll specific stuff
 author:
-  name: Mattia Iavarone # Should appear in <head>.
-  email: mat.iavarone@gmail.com
-  github: natario1
-  website: https://natario.dev
+  name: Noctis # Should appear in <head>.
+  email: kuloudx@icloud.com
+  github: kuloud
+  website: https://kuloud.github.io
 plugins:
   - jekyll-seo-tag # Add SEO tags
 permalink: /:categories/:title # Ensure permalinks have no date nor extension
