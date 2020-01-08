@@ -1,1 +1,1 @@
-Contributing guidelines are [hosted here](https://noctis.github.io/CameraView/extra/contributing).
+Contributing guidelines are [hosted here](https://kuloud.github.io/CameraView/extra/contributing).

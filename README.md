@@ -20,17 +20,17 @@ api 'com.noctis:cameraview:1.0.0'
 ```
 
 - Fast & reliable
-- Gestures support [[docs]](https://noctis.github.io/CameraView/docs/gestures)
-- Real-time filters [[docs]](https://noctis.github.io/CameraView/docs/filters)
-- Camera1 or Camera2 powered engine [[docs]](https://noctis.github.io/CameraView/docs/previews)
-- Frame processing support [[docs]](https://noctis.github.io/CameraView/docs/frame-processing)
-- Watermarks & animated overlays [[docs]](https://noctis.github.io/CameraView/docs/watermarks-and-overlays)
-- OpenGL powered preview [[docs]](https://noctis.github.io/CameraView/docs/previews)
-- Take high-quality content with `takePicture` and `takeVideo` [[docs]](https://noctis.github.io/CameraView/docs/capturing-media)
-- Take super-fast snapshots with `takePictureSnapshot` and `takeVideoSnapshot` [[docs]](https://noctis.github.io/CameraView/docs/capturing-media)
-- Smart sizing: create a `CameraView` of any size [[docs]](https://noctis.github.io/CameraView/docs/preview-size)
-- Control HDR, flash, zoom, white balance, exposure, location, grid drawing & more [[docs]](https://noctis.github.io/CameraView/docs/controls)
-- RAW pictures support [[docs]](https://noctis.github.io/CameraView/docs/controls)
+- Gestures support [[docs]](https://kuloud.github.io/CameraView/docs/gestures)
+- Real-time filters [[docs]](https://kuloud.github.io/CameraView/docs/filters)
+- Camera1 or Camera2 powered engine [[docs]](https://kuloud.github.io/CameraView/docs/previews)
+- Frame processing support [[docs]](https://kuloud.github.io/CameraView/docs/frame-processing)
+- Watermarks & animated overlays [[docs]](https://kuloud.github.io/CameraView/docs/watermarks-and-overlays)
+- OpenGL powered preview [[docs]](https://kuloud.github.io/CameraView/docs/previews)
+- Take high-quality content with `takePicture` and `takeVideo` [[docs]](https://kuloud.github.io/CameraView/docs/capturing-media)
+- Take super-fast snapshots with `takePictureSnapshot` and `takeVideoSnapshot` [[docs]](https://kuloud.github.io/CameraView/docs/capturing-media)
+- Smart sizing: create a `CameraView` of any size [[docs]](https://kuloud.github.io/CameraView/docs/preview-size)
+- Control HDR, flash, zoom, white balance, exposure, location, grid drawing & more [[docs]](https://kuloud.github.io/CameraView/docs/controls)
+- RAW pictures support [[docs]](https://kuloud.github.io/CameraView/docs/controls)
 - Lightweight
 - Works down to API level 15
 - Well tested
@@ -45,8 +45,8 @@ api 'com.noctis:cameraview:1.0.0'
 
 ## Setup
 
-Please read the [official website](https://noctis.github.io/CameraView) for setup instructions and documentation.
-You might also be interested in our [changelog](https://noctis.github.io/CameraView/about/changelog).
+Please read the [official website](https://kuloud.github.io/CameraView) for setup instructions and documentation.
+You might also be interested in our [changelog](https://kuloud.github.io/CameraView/about/changelog).
 Using CameraView is extremely simple:
 
 ```xml
