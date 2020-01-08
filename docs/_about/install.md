@@ -21,7 +21,7 @@ allprojects {
 Then simply download the latest version:
 
 ```groovy
-api 'com.otaliastudios:cameraview:{{ site.github_version }}'
+api 'com.noctis:cameraview:{{ site.github_version }}'
 ```
 
 No other configuration steps are needed.

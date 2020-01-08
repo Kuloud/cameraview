@@ -145,7 +145,7 @@ cameraView.setFrameProcessingPoolSize(3);
 ### XML Attributes
 
 ```xml
-<com.otaliastudios.cameraview.CameraView
+<com.noctis.cameraview.CameraView
     app:cameraFrameProcessingMaxWidth="640"
     app:cameraFrameProcessingMaxHeight="640"
     app:cameraFrameProcessingFormat="0x23"

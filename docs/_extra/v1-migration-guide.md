@@ -169,24 +169,24 @@ way for the future. These changes are listed below:
 
 |Class name|Old package|New package|
 |----------|-----------|-----------|
-|`Audio`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`Control`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`Facing`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`Flash`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`Grid`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`Hdr`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`Mode`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`Preview`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`VideoCodec`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`WhiteBalance`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.controls`|
-|`Frame`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.frame`|
-|`FrameProcessor`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.frame`|
-|`Gesture`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.gesture`|
-|`GestureAction`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.gesture`|
-|`Size`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.size`|
-|`SizeSelector`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.size`|
-|`SizeSelectors`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.size`|
-|`AspectRatio`|`com.otaliastudios.cameraview`|`com.otaliastudios.cameraview.size`|
+|`Audio`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`Control`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`Facing`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`Flash`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`Grid`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`Hdr`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`Mode`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`Preview`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`VideoCodec`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`WhiteBalance`|`com.noctis.cameraview`|`com.noctis.cameraview.controls`|
+|`Frame`|`com.noctis.cameraview`|`com.noctis.cameraview.frame`|
+|`FrameProcessor`|`com.noctis.cameraview`|`com.noctis.cameraview.frame`|
+|`Gesture`|`com.noctis.cameraview`|`com.noctis.cameraview.gesture`|
+|`GestureAction`|`com.noctis.cameraview`|`com.noctis.cameraview.gesture`|
+|`Size`|`com.noctis.cameraview`|`com.noctis.cameraview.size`|
+|`SizeSelector`|`com.noctis.cameraview`|`com.noctis.cameraview.size`|
+|`SizeSelectors`|`com.noctis.cameraview`|`com.noctis.cameraview.size`|
+|`AspectRatio`|`com.noctis.cameraview`|`com.noctis.cameraview.size`|
 
 ### AutoFocus changes
 

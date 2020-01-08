@@ -46,7 +46,7 @@ Looking at this from the other side:
 ### XML Attributes
 
 ```xml
-<com.otaliastudios.cameraview.CameraView
+<com.noctis.cameraview.CameraView
     app:cameraGesturePinch="zoom|exposureCorrection|filterControl1|filterControl2|none"
     app:cameraGestureTap="autoFocus|takePicture|none"
     app:cameraGestureLongTap="autoFocus|takePicture|none"

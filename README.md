@@ -22,7 +22,7 @@ CameraView is a well documented, high-level library that makes capturing picture
 addressing most of the common issues and needs, and still leaving you with flexibility where needed.
 
 ```groovy
-api 'com.otaliastudios:cameraview:2.6.0'
+api 'com.noctis:cameraview:2.6.0'
 ```
 
 - Fast & reliable
@@ -90,7 +90,7 @@ or in the [v1 migration guide](https://natario1.github.io/CameraView/extra/v1-mi
 Using CameraView is extremely simple:
 
 ```xml
-<com.otaliastudios.cameraview.CameraView
+<com.noctis.cameraview.CameraView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -161,5 +161,5 @@ Using CameraView is extremely simple:
         app:layout_drawOnPictureSnapshot="true|false"
         app:layout_drawOnVideoSnapshot="true|false"/>
         
-</com.otaliastudios.cameraview.CameraView>
+</com.noctis.cameraview.CameraView>
 ```

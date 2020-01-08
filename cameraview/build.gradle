@@ -4,7 +4,7 @@ apply plugin: 'com.jfrog.bintray'
 
 // Required by bintray
 version = '2.6.0'
-group = 'com.otaliastudios'
+group = 'com.noctis'
 
 //region android dependencies
 
@@ -16,17 +16,9 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName project.version
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        testInstrumentationRunnerArgument "filter", "" +
-                "com.otaliastudios.cameraview.tools.SdkExcludeFilter," +
-                "com.otaliastudios.cameraview.tools.SdkIncludeFilter"
     }
 
     buildTypes {
-        debug {
-            testCoverageEnabled true
-        }
-
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -35,15 +27,6 @@ android {
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'org.mockito:mockito-inline:2.28.2'
-
-    androidTestImplementation 'androidx.test:runner:1.2.0'
-    androidTestImplementation 'androidx.test:rules:1.2.0'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'org.mockito:mockito-android:2.28.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
     api 'androidx.exifinterface:exifinterface:1.1.0'
     api 'androidx.lifecycle:lifecycle-common:2.1.0'
     api 'com.google.android.gms:play-services-tasks:17.0.0'
@@ -243,19 +226,19 @@ task mergeCoverageReports(type: JacocoReport) {
     if (isCI) {
         // All these classes are tested by the integration tests that we are not able to
         // run on the CI emulator.
-        // classFilter.add('**/com/otaliastudios/cameraview/engine/CameraEngine**.*')
-        // classFilter.add('**/com/otaliastudios/cameraview/engine/Camera1Engine**.*')
-        // classFilter.add('**/com/otaliastudios/cameraview/engine/Camera2Engine**.*')
-        // classFilter.add('**/com/otaliastudios/cameraview/engine/action/**.*')
-        // classFilter.add('**/com/otaliastudios/cameraview/engine/lock/**.*')
-        // classFilter.add('**/com/otaliastudios/cameraview/engine/meter/**.*')
-        // classFilter.add('**/com/otaliastudios/cameraview/picture/**.*')
-        // classFilter.add('**/com/otaliastudios/cameraview/video/**.*')
-        // classFilter.add('**/com/otaliastudios/cameraview/orchestrator/**.*')
-        // classFilter.add('**/com/otaliastudios/cameraview/video/encoding/**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/engine/CameraEngine**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/engine/Camera1Engine**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/engine/Camera2Engine**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/engine/action/**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/engine/lock/**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/engine/meter/**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/picture/**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/video/**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/orchestrator/**.*')
+        // classFilter.add('**/com/com.noctis/cameraview/video/encoding/**.*')
     }
     // We don't test OpenGL filters.
-    classFilter.add('**/com/otaliastudios/cameraview/filters/**.*')
+    classFilter.add('**/com/com.noctis/cameraview/filters/**.*')
 
     classDirectories = fileTree(dir: classDir, excludes: classFilter);
 
