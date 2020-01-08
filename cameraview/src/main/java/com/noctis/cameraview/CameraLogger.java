@@ -55,13 +55,13 @@ public final class CameraLogger {
                  @Nullable Throwable throwable);
     }
 
-    @VisibleForTesting static String lastMessage;
-    @VisibleForTesting static String lastTag;
+    private static String lastMessage;
+    private static String lastTag;
 
     private static int sLevel;
     private static List<Logger> sLoggers = new ArrayList<>();
 
-    @VisibleForTesting static Logger sAndroidLogger = new Logger() {
+    private static Logger sAndroidLogger = new Logger() {
         @Override
         public void log(int level,
                         @NonNull String tag,

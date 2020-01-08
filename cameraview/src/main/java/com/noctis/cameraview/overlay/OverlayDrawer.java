@@ -40,11 +40,11 @@ public class OverlayDrawer {
     private static final CameraLogger LOG = CameraLogger.create(TAG);
 
     private Overlay mOverlay;
-    @VisibleForTesting int mTextureId;
+    private int mTextureId;
     private SurfaceTexture mSurfaceTexture;
     private Surface mSurface;
     private float[] mTransform = new float[16];
-    @VisibleForTesting EglViewport mViewport;
+    private EglViewport mViewport;
     private Issue514Workaround mIssue514Workaround;
     private final Object mIssue514WorkaroundLock = new Object();
 

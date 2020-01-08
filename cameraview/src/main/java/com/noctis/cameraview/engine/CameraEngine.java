@@ -135,7 +135,7 @@ public abstract class CameraEngine implements
     private static final int DESTROY_RETRIES = 2;
 
     private WorkerHandler mHandler;
-    @VisibleForTesting Handler mCrashHandler;
+    private Handler mCrashHandler;
     private final Callback mCallback;
     private final CameraStateOrchestrator mOrchestrator
             = new CameraStateOrchestrator(new CameraOrchestrator.Callback() {

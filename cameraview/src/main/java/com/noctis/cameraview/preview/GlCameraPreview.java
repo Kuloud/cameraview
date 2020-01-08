@@ -70,8 +70,8 @@ public class GlCameraPreview extends FilterCameraPreview<GLSurfaceView, SurfaceT
     // A synchronized set was not enough to avoid crashes, probably due to external classes
     // removing the callback while this set is being iterated. CopyOnWriteArraySet solves this.
     private final Set<RendererFrameCallback> mRendererFrameCallbacks = new CopyOnWriteArraySet<>();
-    @VisibleForTesting float mCropScaleX = 1F;
-    @VisibleForTesting float mCropScaleY = 1F;
+    private float mCropScaleX = 1F;
+    private float mCropScaleY = 1F;
     private View mRootView;
     private Filter mCurrentFilter;
 

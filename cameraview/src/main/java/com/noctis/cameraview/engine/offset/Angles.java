@@ -26,9 +26,9 @@ public class Angles {
     private final static CameraLogger LOG = CameraLogger.create(TAG);
 
     private Facing mSensorFacing;
-    @VisibleForTesting int mSensorOffset = 0;
-    @VisibleForTesting int mDisplayOffset = 0;
-    @VisibleForTesting int mDeviceOrientation = 0;
+    private int mSensorOffset = 0;
+    private int mDisplayOffset = 0;
+    private int mDeviceOrientation = 0;
 
     /**
      * We want to keep everything in the {@link Axis#ABSOLUTE} reference,

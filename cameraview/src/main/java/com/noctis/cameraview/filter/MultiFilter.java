@@ -42,17 +42,17 @@ public class MultiFilter implements Filter, OneParameterFilter, TwoParameterFilt
 
     @VisibleForTesting
     static class State {
-        @VisibleForTesting boolean isCreated = false;
-        @VisibleForTesting boolean isFramebufferCreated = false;
-        @VisibleForTesting Size size = null;
+        private boolean isCreated = false;
+        private boolean isFramebufferCreated = false;
+        private Size size = null;
 
         private int programHandle = -1;
         private int framebufferId = -1;
         private int textureId = -1;
     }
 
-    @VisibleForTesting final List<Filter> filters = new ArrayList<>();
-    @VisibleForTesting final Map<Filter, State> states = new HashMap<>();
+    private final List<Filter> filters = new ArrayList<>();
+    private final Map<Filter, State> states = new HashMap<>();
     private final Object lock = new Object();
     private Size size = null;
     private float parameter1 = 0F;

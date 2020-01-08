@@ -9,9 +9,11 @@
         android:id="@+id/focusMarkerFill"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/cameraview_focus_marker_fill" />
+        android:src="@drawable/cameraview_focus_marker_fill"
+        android:contentDescription="TODO" />
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/cameraview_focus_marker_outline" />
+        android:src="@drawable/cameraview_focus_marker_outline"
+        android:contentDescription="TODO" />
 </FrameLayout>

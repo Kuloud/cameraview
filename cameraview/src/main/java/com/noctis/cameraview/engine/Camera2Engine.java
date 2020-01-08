@@ -82,7 +82,7 @@ public class Camera2Engine extends CameraBaseEngine implements
         ActionHolder {
 
     private static final int FRAME_PROCESSING_FORMAT = ImageFormat.YUV_420_888;
-    @VisibleForTesting static final long METER_TIMEOUT = 2500;
+    private static final long METER_TIMEOUT = 2500;
 
     private final CameraManager mManager;
     private String mCameraId;

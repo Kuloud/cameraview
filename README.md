@@ -4,13 +4,13 @@
 
 &#10240;  <!-- Hack to add whitespace -->
 
-*Post-processing videos or want to reduce video size before uploading? Take a look at our [Transcoder](https://github.com/noctis/Transcoder).*
+*Post-processing videos or want to reduce video size before uploading? Take a look at our [Transcoder](https://github.com/kuloud/Transcoder).*
 
 *Need support, consulting, or have any other business-related question? Feel free to <a href="mailto:kuloudx@icloud.com">get in touch</a>.*
 
 # CameraView
 
-forks from [https://github.com/noctis/CameraView](https://github.com/noctis/CameraView)
+forks from [https://github.com/natario1/CameraView](https://github.com/natario1/CameraView)
 
 CameraView is a well documented, high-level library that makes capturing pictures and videos easy,
 addressing most of the common issues and needs, and still leaving you with flexibility where needed.

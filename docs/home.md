@@ -5,7 +5,7 @@ title: "CameraView"
 
 # CameraView
 
-forks from [https://github.com/noctis/CameraView](https://github.com/noctis/CameraView)
+forks from [https://github.com/natario1/CameraView](https://github.com/natario1/CameraView)
 
 CameraView is a well documented, high-level library that makes capturing pictures and videos easy,
 addressing all of the common issues and needs and much more.

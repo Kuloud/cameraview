@@ -35,7 +35,7 @@ public class GridLinesLayout extends View {
         void onDraw(int lines);
     }
 
-    @VisibleForTesting DrawCallback callback;
+    private DrawCallback callback;
 
     public GridLinesLayout(@NonNull Context context) {
         this(context, null);

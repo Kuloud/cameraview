@@ -109,8 +109,8 @@ public abstract class BaseFilter implements Filter {
     private int vertexTransformMatrixLocation = -1;
     private int vertexPositionLocation = -1;
     private int vertexTextureCoordinateLocation = -1;
-    @VisibleForTesting int programHandle = -1;
-    @VisibleForTesting Size size;
+    private int programHandle = -1;
+    private Size size;
 
     @SuppressWarnings("WeakerAccess")
     protected String vertexPositionName = DEFAULT_VERTEX_POSITION_NAME;

@@ -21,8 +21,8 @@ import androidx.annotation.VisibleForTesting;
  */
 public class DefaultAutoFocusMarker implements AutoFocusMarker {
 
-    @VisibleForTesting View mContainer;
-    @VisibleForTesting View mFill;
+    private View mContainer;
+    private View mFill;
 
     @Nullable
     @Override

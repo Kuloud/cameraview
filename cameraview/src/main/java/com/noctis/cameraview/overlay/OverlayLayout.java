@@ -24,7 +24,7 @@ public class OverlayLayout extends FrameLayout implements Overlay {
     private static final String TAG = OverlayLayout.class.getSimpleName();
     private static final CameraLogger LOG = CameraLogger.create(TAG);
 
-    @VisibleForTesting Target currentTarget = Target.PREVIEW;
+    private Target currentTarget = Target.PREVIEW;
 
     /**
      * We set {@link #setWillNotDraw(boolean)} to false even if we don't draw anything.

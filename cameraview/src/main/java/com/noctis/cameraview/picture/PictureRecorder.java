@@ -1,10 +1,9 @@
 package com.noctis.cameraview.picture;
 
-import com.noctis.cameraview.PictureResult;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
+import com.noctis.cameraview.PictureResult;
 
 /**
  * Interface for picture capturing.
@@ -34,7 +33,7 @@ public abstract class PictureRecorder {
     }
 
     @VisibleForTesting(otherwise = VisibleForTesting.PROTECTED) PictureResult.Stub mResult;
-    @VisibleForTesting PictureResultListener mListener;
+    private PictureResultListener mListener;
     @SuppressWarnings("WeakerAccess")
     protected Exception mError;
 

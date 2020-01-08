@@ -63,11 +63,11 @@ public class Camera1Engine extends CameraBaseEngine implements
     private static final String JOB_FOCUS_END = "focus end";
 
     private static final int PREVIEW_FORMAT = ImageFormat.NV21;
-    @VisibleForTesting static final int AUTOFOCUS_END_DELAY_MILLIS = 2500;
+    private static final int AUTOFOCUS_END_DELAY_MILLIS = 2500;
 
     private final Camera1Mapper mMapper = Camera1Mapper.get();
     private Camera mCamera;
-    @VisibleForTesting int mCameraId;
+    private int mCameraId;
 
     public Camera1Engine(@NonNull Callback callback) {
         super(callback);

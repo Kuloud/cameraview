@@ -24,7 +24,7 @@ public abstract class GestureFinder {
     private final static int GRANULARITY = 50;
 
     private boolean mActive;
-    @VisibleForTesting Gesture mType;
+    private Gesture mType;
     private PointF[] mPoints;
     private Controller mController;
 

@@ -59,7 +59,7 @@ public abstract class CameraPreview<T extends View, Output> {
         void onCrop();
     }
 
-    @VisibleForTesting CropCallback mCropCallback;
+    private CropCallback mCropCallback;
     private SurfaceCallback mSurfaceCallback;
     private T mView;
     boolean mCropping;

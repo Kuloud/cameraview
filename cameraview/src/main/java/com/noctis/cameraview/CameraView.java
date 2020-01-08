@@ -23,10 +23,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import androidx.annotation.ColorInt;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
+import androidx.annotation.*;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.LifecycleOwner;
@@ -136,32 +133,32 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
     // Components
     private Handler mUiHandler;
     private Executor mFrameProcessingExecutor;
-    @VisibleForTesting CameraCallbacks mCameraCallbacks;
+    private CameraCallbacks mCameraCallbacks;
     private CameraPreview mCameraPreview;
     private OrientationHelper mOrientationHelper;
     private CameraEngine mCameraEngine;
     private Size mLastPreviewStreamSize;
     private MediaActionSound mSound;
     private AutoFocusMarker mAutoFocusMarker;
-    @VisibleForTesting List<CameraListener> mListeners = new CopyOnWriteArrayList<>();
-    @VisibleForTesting List<FrameProcessor> mFrameProcessors = new CopyOnWriteArrayList<>();
+    private List<CameraListener> mListeners = new CopyOnWriteArrayList<>();
+    private List<FrameProcessor> mFrameProcessors = new CopyOnWriteArrayList<>();
     private Lifecycle mLifecycle;
 
     // Gestures
-    @VisibleForTesting PinchGestureFinder mPinchGestureFinder;
-    @VisibleForTesting TapGestureFinder mTapGestureFinder;
-    @VisibleForTesting ScrollGestureFinder mScrollGestureFinder;
+    private PinchGestureFinder mPinchGestureFinder;
+    private TapGestureFinder mTapGestureFinder;
+    private ScrollGestureFinder mScrollGestureFinder;
 
     // Views
-    @VisibleForTesting GridLinesLayout mGridLinesLayout;
-    @VisibleForTesting MarkerLayout mMarkerLayout;
+    private GridLinesLayout mGridLinesLayout;
+    private MarkerLayout mMarkerLayout;
     private boolean mKeepScreenOn;
     @SuppressWarnings({"FieldCanBeLocal", "unused"})
     private boolean mExperimental;
     private boolean mInEditor;
 
     // Overlays
-    @VisibleForTesting OverlayLayout mOverlayLayout;
+    private OverlayLayout mOverlayLayout;
 
     public CameraView(@NonNull Context context) {
         super(context, null);
@@ -2137,7 +2134,9 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
         @Override
         public void onShutter(boolean shouldPlaySound) {
             if (shouldPlaySound && mPlaySounds) {
-                playSound(MediaActionSound.SHUTTER_CLICK);
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    playSound(MediaActionSound.SHUTTER_CLICK);
+//                }
             }
         }
 
@@ -2199,7 +2198,9 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
                 @Override
                 public void run() {
                     if (success && mPlaySounds) {
-                        playSound(MediaActionSound.FOCUS_COMPLETE);
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                            playSound(MediaActionSound.FOCUS_COMPLETE);
+                        }
                     }
 
                     if (mAutoFocusMarker != null) {
