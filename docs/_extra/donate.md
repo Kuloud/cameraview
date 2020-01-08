@@ -6,7 +6,7 @@ order: 3
 
 CameraView is maintained and, for the most part, developed by Mattia Iavarone. If you like the project, 
 use it with profit, or simply want to thank back, please consider 
-[sponsoring me](https://github.com/sponsors/natario1) through the GitHub Sponsors program!
+[sponsoring me](https://github.com/sponsors/noctis) through the GitHub Sponsors program!
 
 You can also donate to the project through [Open Collective](https://opencollective.com/cameraview/donate).
 

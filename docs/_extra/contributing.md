@@ -44,11 +44,11 @@ has a few unit tests and more robust tests in the `androidTest` folder, which ca
 ### License
 
 CameraView was formally born as a fork of
-[natario1's CameraView](https://github.com/natario1/CameraView),
+[noctis's CameraView](https://github.com/noctis/CameraView),
 [CameraKit-Android](https://github.com/wonderkiln/CameraKit-Android)
 and [Google's CameraView](https://github.com/google/cameraview), but has been completely rewritten since.
 
-natario1/CameraView's source code is licensed under the [MIT](https://github.com/natario1/CameraView/blob/master/LICENSE) license.
+noctis/CameraView's source code is licensed under the [MIT](https://github.com/noctis/CameraView/blob/master/LICENSE) license.
 
 CameraKit's source code is licensed under the [MIT](https://github.com/wonderkiln/CameraKit-Android/blob/master/LICENSE) license.
 

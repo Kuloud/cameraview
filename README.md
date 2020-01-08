@@ -1,18 +1,13 @@
 [![Build Status](https://github.com/kuloud/CameraView/workflows/CI/badge.svg?event=push)](https://github.com/kuloud/CameraView/actions)
-[![Code Coverage](https://codecov.io/gh/natario1/CameraView/branch/master/graph/badge.svg)](https://codecov.io/gh/natario1/CameraView)
-[![Release](https://img.shields.io/github/release/kuloud/CameraView.svg)](https://github.com/natario1/CameraView/releases)
-[![Issues](https://img.shields.io/github/issues-raw/kuloud/CameraView.svg)](https://github.com/natario1/CameraView/issues)
-[![Funding](https://img.shields.io/opencollective/all/CameraView.svg?colorB=r)](https://natario1.github.io/CameraView/extra/donate)
+[![Release](https://img.shields.io/github/release/kuloud/CameraView.svg)](https://github.com/kuloud/CameraView/releases)
+[![Issues](https://img.shields.io/github/issues-raw/kuloud/CameraView.svg)](https://github.com/kuloud/CameraView/issues)
 
 &#10240;  <!-- Hack to add whitespace -->
 
-<p align="center">
-  <img src="docs/static/banner.png" width="100%">
-</p>
 
-*Post-processing videos or want to reduce video size before uploading? Take a look at our [Transcoder](https://github.com/natario1/Transcoder).*
+*Post-processing videos or want to reduce video size before uploading? Take a look at our [Transcoder](https://github.com/noctis/Transcoder).*
 
-*Like the project, make profit from it, or simply want to thank back? Please consider [sponsoring me](https://github.com/sponsors/natario1) or [donating](https://natario1.github.io/CameraView/extra/donate)!*
+*Like the project, make profit from it, or simply want to thank back? Please consider [sponsoring me](https://github.com/sponsors/noctis) or [donating](https://noctis.github.io/CameraView/extra/donate)!*
 
 *Need support, consulting, or have any other business-related question? Feel free to <a href="mailto:mat.iavarone@gmail.com">get in touch</a>.*
 
@@ -22,21 +17,21 @@ CameraView is a well documented, high-level library that makes capturing picture
 addressing most of the common issues and needs, and still leaving you with flexibility where needed.
 
 ```groovy
-api 'com.noctis:cameraview:2.6.0'
+api 'com.noctis:cameraview:1.0.0'
 ```
 
 - Fast & reliable
-- Gestures support [[docs]](https://natario1.github.io/CameraView/docs/gestures)
-- Real-time filters [[docs]](https://natario1.github.io/CameraView/docs/filters)
-- Camera1 or Camera2 powered engine [[docs]](https://natario1.github.io/CameraView/docs/previews)
-- Frame processing support [[docs]](https://natario1.github.io/CameraView/docs/frame-processing)
-- Watermarks & animated overlays [[docs]](https://natario1.github.io/CameraView/docs/watermarks-and-overlays)
-- OpenGL powered preview [[docs]](https://natario1.github.io/CameraView/docs/previews)
-- Take high-quality content with `takePicture` and `takeVideo` [[docs]](https://natario1.github.io/CameraView/docs/capturing-media)
-- Take super-fast snapshots with `takePictureSnapshot` and `takeVideoSnapshot` [[docs]](https://natario1.github.io/CameraView/docs/capturing-media)
-- Smart sizing: create a `CameraView` of any size [[docs]](https://natario1.github.io/CameraView/docs/preview-size)
-- Control HDR, flash, zoom, white balance, exposure, location, grid drawing & more [[docs]](https://natario1.github.io/CameraView/docs/controls)
-- RAW pictures support [[docs]](https://natario1.github.io/CameraView/docs/controls)
+- Gestures support [[docs]](https://noctis.github.io/CameraView/docs/gestures)
+- Real-time filters [[docs]](https://noctis.github.io/CameraView/docs/filters)
+- Camera1 or Camera2 powered engine [[docs]](https://noctis.github.io/CameraView/docs/previews)
+- Frame processing support [[docs]](https://noctis.github.io/CameraView/docs/frame-processing)
+- Watermarks & animated overlays [[docs]](https://noctis.github.io/CameraView/docs/watermarks-and-overlays)
+- OpenGL powered preview [[docs]](https://noctis.github.io/CameraView/docs/previews)
+- Take high-quality content with `takePicture` and `takeVideo` [[docs]](https://noctis.github.io/CameraView/docs/capturing-media)
+- Take super-fast snapshots with `takePictureSnapshot` and `takeVideoSnapshot` [[docs]](https://noctis.github.io/CameraView/docs/capturing-media)
+- Smart sizing: create a `CameraView` of any size [[docs]](https://noctis.github.io/CameraView/docs/preview-size)
+- Control HDR, flash, zoom, white balance, exposure, location, grid drawing & more [[docs]](https://noctis.github.io/CameraView/docs/controls)
+- RAW pictures support [[docs]](https://noctis.github.io/CameraView/docs/controls)
 - Lightweight
 - Works down to API level 15
 - Well tested
@@ -49,43 +44,10 @@ api 'com.noctis:cameraview:2.6.0'
 
 &#10240;  <!-- Hack to add whitespace -->
 
-## Support 
-
-If you like the project, make profit from it, or simply want to thank back, please consider 
-[sponsoring me](https://github.com/sponsors/natario1) through the GitHub Sponsors program! You can
-have your company logo here, get private support hours or simply help me push this forward.
-If you prefer, you can also [donate](https://natario1.github.io/CameraView/extra/donate) 
-to our OpenCollective page.
-
-CameraView is trusted and supported by [ShareChat](https://sharechat.com/), a social media app with over 100 million downloads. 
-
-<p align="center">
-  <img src="docs/static/sharechat.png" width="100%">
-</p>
-
-Feel free to <a href="mailto:mat.iavarone@gmail.com">contact me</a> for support, consulting or any other business-related question.
-
-Thanks to all our project backers... [[become a backer]](https://opencollective.com/cameraview#backer)
-
-<a href="https://opencollective.com/cameraview#backers" target="_blank"><img src="https://opencollective.com/cameraview/backers.svg?width=890"></a>
-
-...and to all our project sponsors! [[become a sponsor]](https://opencollective.com/cameraview#sponsor)
-
-<a href="https://opencollective.com/cameraview/sponsor/0/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/0/avatar.svg"></a>
-<a href="https://opencollective.com/cameraview/sponsor/1/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/1/avatar.svg"></a>
-<a href="https://opencollective.com/cameraview/sponsor/2/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/2/avatar.svg"></a>
-<a href="https://opencollective.com/cameraview/sponsor/3/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/3/avatar.svg"></a>
-<a href="https://opencollective.com/cameraview/sponsor/4/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/4/avatar.svg"></a>
-<a href="https://opencollective.com/cameraview/sponsor/5/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/5/avatar.svg"></a>
-<a href="https://opencollective.com/cameraview/sponsor/6/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/6/avatar.svg"></a>
-<a href="https://opencollective.com/cameraview/sponsor/7/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/7/avatar.svg"></a>
-<a href="https://opencollective.com/cameraview/sponsor/8/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/8/avatar.svg"></a>
-<a href="https://opencollective.com/cameraview/sponsor/9/website" target="_blank"><img src="https://opencollective.com/cameraview/sponsor/9/avatar.svg"></a>
-
 ## Setup
 
-Please read the [official website](https://natario1.github.io/CameraView) for setup instructions and documentation.
-You might also be interested in our [changelog](https://natario1.github.io/CameraView/about/changelog).
+Please read the [official website](https://noctis.github.io/CameraView) for setup instructions and documentation.
+You might also be interested in our [changelog](https://noctis.github.io/CameraView/about/changelog).
 Using CameraView is extremely simple:
 
 ```xml
