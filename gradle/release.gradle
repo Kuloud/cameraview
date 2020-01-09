@@ -16,10 +16,10 @@
 
 
 // https://maven.pkg.github.com/kuloud/CameraView
-//apply from: rootProject.file('gradle/release_github_package_registry.gradle')
+apply from: rootProject.file('gradle/release_github_package_registry.gradle')
 
 // https://bintray.com/kuloud/maven
-apply from: rootProject.file('gradle/release_bintray.gradle')
+//apply from: rootProject.file('gradle/release_bintray.gradle')
 
 
 
