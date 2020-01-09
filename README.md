@@ -15,8 +15,8 @@ forks from [https://github.com/natario1/CameraView](https://github.com/natario1/
 CameraView is a well documented, high-level library that makes capturing pictures and videos easy,
 addressing most of the common issues and needs, and still leaving you with flexibility where needed.
 
-```groovy
-api 'com.noctis:cameraview:1.0.0'
+```gradle
+api 'com.noctis:camera-view:1.0.0'
 ```
 
 - Fast & reliable
