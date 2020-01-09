@@ -1,1 +1,1 @@
-include ':demo', ':cameraview'
+include ':demo', ':cameraview', ':cameraview-filter', ':cameraview-common'

@@ -1,15 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
-ext {
-    releaseArtifact = 'CameraView'
-    releaseDescription = 'CameraView is a well documented, high-level library that makes capturing pictures and videos easy, addressing all of the common issues and needs and much more.'
-    releaseGroup = 'com.noctis'
-}
-apply from: rootProject.file('gradle/release.gradle')
-
-//region android dependencies
-
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
@@ -31,12 +22,12 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.exifinterface:exifinterface:1.1.0'
-    implementation 'androidx.lifecycle:lifecycle-common:2.1.0'
-    implementation 'com.google.android.gms:play-services-tasks:17.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
     implementation 'androidx.annotation:annotation:1.1.0'
 
-    api project(':cameraview-common')
-}
+    implementation project(':cameraview-common')
 
-//endregion
+    implementation project(':cameraview')
+}

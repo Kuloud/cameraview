@@ -3,7 +3,6 @@ package com.noctis.cameraview.filter;
 import android.opengl.GLES20;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
 
 import com.noctis.cameraview.CameraLogger;
 import com.noctis.cameraview.internal.GlUtils;

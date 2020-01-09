@@ -1,0 +1,23 @@
+<resources>
+    <string name="cameraview_filter_autofix">com.noctis.cameraview.filter.filters.AutoFixFilter</string>
+    <string name="cameraview_filter_black_and_white">com.noctis.cameraview.filter.filters.BlackAndWhiteFilter</string>
+    <string name="cameraview_filter_brightness">com.noctis.cameraview.filter.filters.BrightnessFilter</string>
+    <string name="cameraview_filter_contrast">com.noctis.cameraview.filter.filters.ContrastFilter</string>
+    <string name="cameraview_filter_cross_process">com.noctis.cameraview.filter.filters.CrossProcessFilter</string>
+    <string name="cameraview_filter_documentary">com.noctis.cameraview.filter.filters.DocumentaryFilter</string>
+    <string name="cameraview_filter_duotone">com.noctis.cameraview.filter.filters.DuotoneFilter</string>
+    <string name="cameraview_filter_fill_light">com.noctis.cameraview.filter.filters.FillLightFilter</string>
+    <string name="cameraview_filter_gamma">com.noctis.cameraview.filter.filters.GammaFilter</string>
+    <string name="cameraview_filter_grain">com.noctis.cameraview.filter.filters.GrainFilter</string>
+    <string name="cameraview_filter_grayscale">com.noctis.cameraview.filter.filters.GrayscaleFilter</string>
+    <string name="cameraview_filter_hue">com.noctis.cameraview.filter.filters.HueFilter</string>
+    <string name="cameraview_filter_invert_colors">com.noctis.cameraview.filter.filters.InvertColorsFilter</string>
+    <string name="cameraview_filter_lomoish">com.noctis.cameraview.filter.filters.LomoishFilter</string>
+    <string name="cameraview_filter_posterize">com.noctis.cameraview.filter.filters.PosterizeFilter</string>
+    <string name="cameraview_filter_saturation">com.noctis.cameraview.filter.filters.SaturationFilter</string>
+    <string name="cameraview_filter_sepia">com.noctis.cameraview.filter.filters.SepiaFilter</string>
+    <string name="cameraview_filter_sharpness">com.noctis.cameraview.filter.filters.SharpnessFilter</string>
+    <string name="cameraview_filter_temperature">com.noctis.cameraview.filter.filters.TemperatureFilter</string>
+    <string name="cameraview_filter_tint">com.noctis.cameraview.filter.filters.TintFilter</string>
+    <string name="cameraview_filter_vignette">com.noctis.cameraview.filter.filters.VignetteFilter</string>
+</resources>

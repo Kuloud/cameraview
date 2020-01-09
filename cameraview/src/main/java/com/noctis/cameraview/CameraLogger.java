@@ -1,11 +1,9 @@
 package com.noctis.cameraview;
 
+import android.util.Log;
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
-
-import android.util.Log;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -16,6 +14,7 @@ import java.util.List;
  * Utility class that can log traces and info.
  */
 @SuppressWarnings({"WeakerAccess", "UnusedReturnValue"})
+@Deprecated
 public final class CameraLogger {
 
     public final static int LEVEL_VERBOSE = 0;
@@ -25,6 +24,7 @@ public final class CameraLogger {
 
     /**
      * Interface of integers representing log levels.
+     *
      * @see #LEVEL_VERBOSE
      * @see #LEVEL_INFO
      * @see #LEVEL_WARNING
@@ -32,7 +32,8 @@ public final class CameraLogger {
      */
     @IntDef({LEVEL_VERBOSE, LEVEL_INFO, LEVEL_WARNING, LEVEL_ERROR})
     @Retention(RetentionPolicy.SOURCE)
-    public @interface LogLevel {}
+    public @interface LogLevel {
+    }
 
     /**
      * A Logger can listen to internal log events
@@ -44,15 +45,15 @@ public final class CameraLogger {
         /**
          * Notifies that an internal log event was just triggered.
          *
-         * @param level the log level
-         * @param tag the log tag
-         * @param message the log message
+         * @param level     the log level
+         * @param tag       the log tag
+         * @param message   the log message
          * @param throwable an optional throwable
          */
         void log(@LogLevel int level,
-                 @NonNull String tag,
-                 @NonNull String message,
-                 @Nullable Throwable throwable);
+                @NonNull String tag,
+                @NonNull String message,
+                @Nullable Throwable throwable);
     }
 
     private static String lastMessage;
@@ -64,14 +65,22 @@ public final class CameraLogger {
     private static Logger sAndroidLogger = new Logger() {
         @Override
         public void log(int level,
-                        @NonNull String tag,
-                        @NonNull String message,
-                        @Nullable Throwable throwable) {
+                @NonNull String tag,
+                @NonNull String message,
+                @Nullable Throwable throwable) {
             switch (level) {
-                case LEVEL_VERBOSE: Log.v(tag, message, throwable); break;
-                case LEVEL_INFO: Log.i(tag, message, throwable); break;
-                case LEVEL_WARNING: Log.w(tag, message, throwable); break;
-                case LEVEL_ERROR: Log.e(tag, message, throwable); break;
+                case LEVEL_VERBOSE:
+                    Log.v(tag, message, throwable);
+                    break;
+                case LEVEL_INFO:
+                    Log.i(tag, message, throwable);
+                    break;
+                case LEVEL_WARNING:
+                    Log.w(tag, message, throwable);
+                    break;
+                case LEVEL_ERROR:
+                    Log.e(tag, message, throwable);
+                    break;
             }
         }
     };
@@ -95,11 +104,11 @@ public final class CameraLogger {
     /**
      * Sets the log sLevel for logcat events.
      *
+     * @param logLevel the desired log sLevel
      * @see #LEVEL_VERBOSE
      * @see #LEVEL_INFO
      * @see #LEVEL_WARNING
      * @see #LEVEL_ERROR
-     * @param logLevel the desired log sLevel
      */
     public static void setLogLevel(@LogLevel int logLevel) {
         sLevel = logLevel;
@@ -140,6 +149,7 @@ public final class CameraLogger {
 
     /**
      * Log to the verbose channel.
+     *
      * @param data log contents
      * @return the log message, if logged
      */
@@ -150,6 +160,7 @@ public final class CameraLogger {
 
     /**
      * Log to the info channel.
+     *
      * @param data log contents
      * @return the log message, if logged
      */
@@ -160,6 +171,7 @@ public final class CameraLogger {
 
     /**
      * Log to the warning channel.
+     *
      * @param data log contents
      * @return the log message, if logged
      */
@@ -170,6 +182,7 @@ public final class CameraLogger {
 
     /**
      * Log to the error channel.
+     *
      * @param data log contents
      * @return the log message, if logged
      */

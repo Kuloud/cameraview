@@ -4,7 +4,6 @@ import android.opengl.GLES11Ext;
 import android.opengl.GLES20;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
 
 import com.noctis.cameraview.internal.GlUtils;
 import com.noctis.cameraview.size.Size;
@@ -40,7 +39,6 @@ import java.util.Map;
 @SuppressWarnings("unused")
 public class MultiFilter implements Filter, OneParameterFilter, TwoParameterFilter {
 
-    @VisibleForTesting
     static class State {
         private boolean isCreated = false;
         private boolean isFramebufferCreated = false;
