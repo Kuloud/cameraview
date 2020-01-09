@@ -2,7 +2,6 @@ package com.noctis.cameraview.picture;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
 import com.noctis.cameraview.PictureResult;
 
 /**
@@ -32,7 +31,7 @@ public abstract class PictureRecorder {
         void onPictureResult(@Nullable PictureResult.Stub result, @Nullable Exception error);
     }
 
-    @VisibleForTesting(otherwise = VisibleForTesting.PROTECTED) PictureResult.Stub mResult;
+    protected PictureResult.Stub mResult;
     private PictureResultListener mListener;
     @SuppressWarnings("WeakerAccess")
     protected Exception mError;

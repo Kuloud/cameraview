@@ -1,10 +1,9 @@
 package com.noctis.cameraview.filter;
 
 import android.opengl.GLES20;
-
 import androidx.annotation.NonNull;
-
-import com.noctis.cameraview.CameraLogger;
+import com.didi.aoe.library.logging.Logger;
+import com.didi.aoe.library.logging.LoggerFactory;
 import com.noctis.cameraview.internal.GlUtils;
 import com.noctis.cameraview.size.Size;
 
@@ -42,7 +41,7 @@ import java.nio.FloatBuffer;
 public abstract class BaseFilter implements Filter {
 
     private final static String TAG = BaseFilter.class.getSimpleName();
-    private final static CameraLogger LOG = CameraLogger.create(TAG);
+    private final static Logger LOG = LoggerFactory.getLogger(TAG);
 
     @SuppressWarnings("WeakerAccess")
     protected final static String DEFAULT_VERTEX_POSITION_NAME = "aPosition";
@@ -178,7 +177,7 @@ public abstract class BaseFilter implements Filter {
     @Override
     public void draw(long timestampUs, float[] transformMatrix) {
         if (programHandle == -1) {
-            LOG.w("Filter.draw() called after destroying the filter. " +
+            LOG.warn("Filter.draw() called after destroying the filter. " +
                     "This can happen rarely because of threading.");
         } else {
             onPreDraw(timestampUs, transformMatrix);

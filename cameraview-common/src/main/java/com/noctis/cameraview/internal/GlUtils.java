@@ -3,10 +3,9 @@ package com.noctis.cameraview.internal;
 
 import android.opengl.GLES20;
 import android.opengl.Matrix;
-
 import androidx.annotation.NonNull;
-
-import com.noctis.cameraview.CameraLogger;
+import com.didi.aoe.library.logging.Logger;
+import com.didi.aoe.library.logging.LoggerFactory;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -15,10 +14,11 @@ import java.nio.FloatBuffer;
 public class GlUtils {
 
     private final static String TAG = GlUtils.class.getSimpleName();
-    private final static CameraLogger LOG = CameraLogger.create(TAG);
+    private final static Logger LOG = LoggerFactory.getLogger(TAG);
 
     // Identity matrix for general use.
     public static final float[] IDENTITY_MATRIX = new float[16];
+
     static {
         Matrix.setIdentityM(IDENTITY_MATRIX, 0);
     }
@@ -26,18 +26,20 @@ public class GlUtils {
     public static void checkError(@NonNull String opName) {
         int error = GLES20.glGetError();
         if (error != GLES20.GL_NO_ERROR) {
-            String message = LOG.e("Error during", opName, "glError 0x",
-                    Integer.toHexString(error));
+            String message = "Error during " + opName + "glError 0x" + Integer.toHexString(error);
+            LOG.error(message);
             throw new RuntimeException(message);
         }
     }
 
     public static void checkLocation(int location, @NonNull String name) {
         if (location < 0) {
-            String message = LOG.e("Unable to locate", name, "in program");
+            String message = "Unable to locate" + name + "in program";
+            LOG.error(message);
             throw new RuntimeException(message);
         }
     }
+
     // Compiles the given shader, returns a handle.
     @SuppressWarnings("WeakerAccess")
     public static int loadShader(int shaderType, @NonNull String source) {
@@ -48,7 +50,7 @@ public class GlUtils {
         int[] compiled = new int[1];
         GLES20.glGetShaderiv(shader, GLES20.GL_COMPILE_STATUS, compiled, 0);
         if (compiled[0] == 0) {
-            LOG.e("Could not compile shader", shaderType, ":",
+            LOG.error("Could not compile shader", shaderType, ":",
                     GLES20.glGetShaderInfoLog(shader));
             GLES20.glDeleteShader(shader);
             shader = 0;
@@ -66,7 +68,7 @@ public class GlUtils {
         int program = GLES20.glCreateProgram();
         checkError("glCreateProgram");
         if (program == 0) {
-            LOG.e("Could not create program");
+            LOG.error("Could not create program");
         }
         GLES20.glAttachShader(program, vertexShader);
         checkError("glAttachShader");
@@ -76,7 +78,7 @@ public class GlUtils {
         int[] linkStatus = new int[1];
         GLES20.glGetProgramiv(program, GLES20.GL_LINK_STATUS, linkStatus, 0);
         if (linkStatus[0] != GLES20.GL_TRUE) {
-            LOG.e("Could not link program:", GLES20.glGetProgramInfoLog(program));
+            LOG.error("Could not link program:", GLES20.glGetProgramInfoLog(program));
             GLES20.glDeleteProgram(program);
             program = 0;
         }

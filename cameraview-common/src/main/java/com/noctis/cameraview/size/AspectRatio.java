@@ -1,7 +1,6 @@
 package com.noctis.cameraview.size;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.VisibleForTesting;
 
 import java.util.HashMap;
 

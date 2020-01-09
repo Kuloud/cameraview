@@ -6,13 +6,7 @@ import java.io.File;
 
 
 /**
- * A Filter is a real time filter that operates onto the camera preview, plus any
- * snapshot media taken with {@link CameraView#takePictureSnapshot()} and
- * {@link CameraView#takeVideoSnapshot(File)}.
- *
- * You can apply filters to the camera engine using {@link CameraView#setFilter(Filter)}.
- * The default filter is called {@link NoFilter} and can be used to restore the normal preview.
- * A lof of other filters are collected in the {@link Filters} class.
+ * A Filter is a real time filter that operates onto the camera preview.
  *
  * Advanced users can create custom filters using GLES.
  * It is recommended to extend {@link BaseFilter} instead of this class.

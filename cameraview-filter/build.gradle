@@ -29,5 +29,4 @@ dependencies {
 
     implementation project(':cameraview-common')
 
-    implementation project(':cameraview')
 }
