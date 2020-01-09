@@ -21,7 +21,7 @@ allprojects {
 Then simply download the latest version:
 
 ```groovy
-api 'com.noctis:cameraview:{{ site.github_version }}'
+api 'com.noctis:camera-view:{{ site.github_version }}'
 ```
 
 No other configuration steps are needed.

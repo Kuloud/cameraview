@@ -38,8 +38,6 @@ public void onViewCreated(View view, Bundle savedInstanceState) {
 }
 ```
 
-Can't resolve the lifecycle owner interface? Read [below](#without-support-libraries).
-
 ### Set up a CameraListener
 
 The next thing to do is to add a new `CameraListener` to be notified about camera events.
@@ -120,30 +118,4 @@ to control the sensor, the UI appearance, the quality and size of the output, or
 frames. Keep reading the documentation!
 
 > For runtime permissions and Manifest setup, please read the [permissions page](../docs/runtime-permissions).
-
-### Without support libraries
-
-If you are not using support libraries and you can't resolve the LifecycleOwner interface,
-make sure you override `onResume`, `onPause` and  `onDestroy` in your activity (`onDestroyView`
-in your fragment), and call `open()`, `close()` and `destroy()`.
-
-```java
-@Override
-protected void onResume() {
-    super.onResume();
-    cameraView.open();
-}
-
-@Override
-protected void onPause() {
-    super.onPause();
-    cameraView.close();
-}
-
-@Override
-protected void onDestroy() {
-    super.onDestroy();
-    cameraView.destroy();
-}
-```
 
