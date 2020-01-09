@@ -36,7 +36,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-tasks:17.0.0'
     implementation 'androidx.annotation:annotation:1.1.0'
 
-    implementation deps.camera.common
+    api deps.camera.common
 }
 
 //endregion

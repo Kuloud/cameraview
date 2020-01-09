@@ -20,9 +20,9 @@ import android.widget.Toast;
 
 import com.noctis.cameraview.CameraUtils;
 import com.noctis.cameraview.FileCallback;
-import com.noctis.cameraview.size.AspectRatio;
 import com.noctis.cameraview.BitmapCallback;
 import com.noctis.cameraview.PictureResult;
+import com.noctis.cameraview.size.AspectRatio;
 
 import java.io.File;
 
