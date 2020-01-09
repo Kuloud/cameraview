@@ -14,6 +14,9 @@ This feature is considered to be stable and the only condition is to use the `Pr
 preview.
 
 ### Simple usage
+```gradle
+implementation 'com.noctis:camera-view-filter:{{ site.github_version }}'
+```
 
 ```xml
 <com.noctis.cameraview.CameraView

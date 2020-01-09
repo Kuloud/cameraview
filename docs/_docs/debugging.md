@@ -8,17 +8,56 @@ disqus: 1
 `CameraView` will log a lot of interesting events related to the camera lifecycle. These are important
 to identify bugs. The default logger will simply use Android `Log` methods posting to logcat.
 
-You can attach and detach external loggers using `CameraLogger.registerLogger()`:
+You can attach and detach external loggers using `LoggerFactory.setLoggerBinder()`:
 
 ```java
-CameraLogger.registerLogger(new Logger() {
+LoggerFactory.setLoggerBinder(new LoggerBinder() {
     @Override
-    public void log(@LogLevel int level, String tag, String message, @Nullable Throwable throwable) {
-        // For example...
-        Crashlytics.log(message);
+    public Logger getLogger(String tag) {
+        return new AoeLoggerImpl(tag);
     }
 });
+
 ```
 
-Make sure you enable the logger using `CameraLogger.setLogLevel(@LogLevel int)`. The default will only
-log error events.
+Implements interface `Logger` for handling of different levels of logs.
+
+```java
+public class AoeLoggerImpl implements Logger {
+    private String mTag = "Logger";
+
+    public AoeLoggerImpl(String tag) {
+        mTag = tag;
+    }
+
+    @Override
+    public void debug(String msg, Object... args) {
+        Log.d(mTag, String.format(msg, args));
+    }
+
+    @Override
+    public void info(String msg, Object... args) {
+        Log.d(mTag, String.format(msg, args));
+    }
+
+    @Override
+    public void warn(String msg, Throwable t) {
+        Log.w(mTag, msg, t);
+    }
+
+    @Override
+    public void warn(String msg, Object... args) {
+        Log.d(mTag, String.format(msg, args));
+    }
+
+    @Override
+    public void error(String msg, Throwable t) {
+        Log.e(mTag, msg, t);
+    }
+
+    @Override
+    public void error(String msg, Object... args) {
+        Log.e(mTag, String.format(msg, args));
+    }
+}
+```

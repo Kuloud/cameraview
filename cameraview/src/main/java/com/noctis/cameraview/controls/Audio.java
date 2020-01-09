@@ -34,7 +34,7 @@ public enum Audio implements Control {
      */
     STEREO(3);
 
-    final static Audio DEFAULT = ON;
+    final static Audio DEFAULT = OFF;
 
     private int value;
 

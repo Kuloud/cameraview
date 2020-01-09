@@ -8,6 +8,7 @@ order: 3
 
 ### Changed
 - Add module cameraview-filter, split filter feature.
+- Set Audio default value to OFF
 
 ### Removed
 - frame freeze method

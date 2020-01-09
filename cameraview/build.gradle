@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 ext {
-    releaseArtifact = 'CameraView'
+    releaseArtifact = 'camera-view'
     releaseDescription = 'CameraView is a well documented, high-level library that makes capturing pictures and videos easy, addressing all of the common issues and needs and much more.'
     releaseGroup = 'com.noctis'
 }

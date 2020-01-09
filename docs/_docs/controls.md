@@ -23,7 +23,7 @@ or `CameraOptions.supports(Control)` to see if it is supported.
     app:cameraWhiteBalance="auto|incandescent|fluorescent|daylight|cloudy"
     app:cameraHdr="off|on"
     app:cameraPictureFormat="jpeg|dng"
-    app:cameraAudio="on|off|mono|stereo"
+    app:cameraAudio="off|on|mono|stereo"
     app:cameraAudioBitRate="0"
     app:cameraVideoCodec="deviceDefault|h263|h264"
     app:cameraVideoMaxSize="0"
@@ -108,7 +108,7 @@ cameraView.setPictureFormat(PictureFormat.DNG);
 ##### cameraAudio
 
 Turns on or off audio stream while recording videos.
-Defaults to `ON`.
+Defaults to `OFF`.
 The available values are exposed through the `CameraOptions` object.
 
 ```java
