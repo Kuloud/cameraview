@@ -62,24 +62,6 @@ public class Frame {
     }
 
     /**
-     * Clones the frame, returning a frozen content that will not be overwritten.
-     * This can be kept or safely passed to other threads.
-     * Using freeze without clearing with {@link #release()} can result in memory leaks.
-     *
-     * @return a frozen Frame
-     */
-    @SuppressLint("NewApi")
-    @NonNull
-    public Frame freeze() {
-        ensureHasContent();
-        Frame other = new Frame(mManager);
-        //noinspection unchecked
-        Object data = mManager.cloneFrameData(getData());
-        other.setContent(data, mTime, mRotation, mSize, mFormat);
-        return other;
-    }
-
-    /**
      * Disposes the contents of this frame. Can be useful for frozen frames
      * that are not useful anymore.
      */

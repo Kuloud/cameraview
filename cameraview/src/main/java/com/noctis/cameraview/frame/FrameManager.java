@@ -160,14 +160,6 @@ public abstract class FrameManager<T> {
      */
     protected abstract void onFrameDataReleased(@NonNull T data, boolean recycled);
 
-    @NonNull
-    final T cloneFrameData(@NonNull T data) {
-        return onCloneFrameData(data);
-    }
-
-    @NonNull
-    protected abstract T onCloneFrameData(@NonNull T data);
-
     /**
      * Releases all frames controlled by this manager and
      * clears the pool.

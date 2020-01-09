@@ -38,7 +38,6 @@ apply new data to it. So:
 - you can do your job synchronously in the `process()` method. This is **recommended**.
 - if you must hold the `Frame` instance longer, use `frame = frame.freeze()` to get a frozen instance
   that will not be affected. This is **discouraged** because it requires copying the whole array.
-  Also, starting from `v2.5.0`, this is not allowed when Camera2 is used.
   
 ### Process synchronously
 

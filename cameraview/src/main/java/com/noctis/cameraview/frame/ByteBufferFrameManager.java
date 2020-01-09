@@ -3,7 +3,6 @@ package com.noctis.cameraview.frame;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
 import com.noctis.cameraview.size.Size;
 
 import java.util.concurrent.LinkedBlockingQueue;
@@ -137,14 +136,6 @@ public class ByteBufferFrameManager extends FrameManager<byte[]> {
                 mBufferQueue.offer(data);
             }
         }
-    }
-
-    @NonNull
-    @Override
-    protected byte[] onCloneFrameData(@NonNull byte[] data) {
-        byte[] clone = new byte[data.length];
-        System.arraycopy(data, 0, clone, 0, data.length);
-        return clone;
     }
 
     /**
