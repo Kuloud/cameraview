@@ -157,7 +157,6 @@
         </attr>
 
         <attr name="cameraRequestPermissions" format="boolean|reference"/>
-        <attr name="cameraExperimental" format="boolean|reference" />
 
     </declare-styleable>
 

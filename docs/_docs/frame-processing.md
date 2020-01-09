@@ -8,8 +8,7 @@ disqus: 1
 
 We support frame processors that will receive data from the camera preview stream. This is a useful
 feature with a wide range of applications. For example, the frames can be sent to a face detector,
-a QR code detector, the
-[Firebase Machine Learning Kit](https://firebase.google.com/products/ml-kit/), or any other frame consumer.
+a QR code detector, or any other frame consumer.
 
 ```java
 cameraView.addFrameProcessor(new FrameProcessor() {
@@ -44,7 +43,6 @@ apply new data to it. So:
 Processing synchronously, for the duration of the `process()` method, is the recommended way of using
 processors, because it solves different issues:
 
-- avoids the need of calling `frame = frame.freeze()` which is a very expensive operation
 - the engine will **automatically drop frames** if the `process()` method is busy, so you'll only 
   receive frames that you can handle
 - we have already allocated background threads for you, so there's no need to create another
@@ -84,8 +82,7 @@ public void process(@NonNull Frame frame) {
 
 ### Frame Data
 
-Starting from `v2.5.0`, the type of data offered by `frame.getData()` depends on the camera engine
-that created this frame:
+The type of data offered by `frame.getData()` depends on the camera engine that created this frame:
 - The Camera1 engine will offer `byte[]` arrays
 - The Camera2 engine will offer `android.media.Image` objects
 
@@ -117,10 +114,10 @@ You can check which formats are available for use through `CameraOptions.getSupp
 
 ### Advanced: Thread Control
 
-Starting from `v2.5.1`, you can control the number of background threads that are allocated
-for frame processing work. This should further push you into perform processing actions synchronously
-and can be useful if processing is very slow with respect to the preview frame rate, in order to
-avoid dropping too many frames.
+You can control the number of background threads that are allocated for frame processing work. This
+should further push you into perform processing actions synchronously and can be useful if
+processing is very slow with respect to the preview frame rate, in order to avoid dropping too many
+frames.
 
 You can change the number of threads by calling `setFrameProcessingExecutors()`. Whenever you do,
 we recommend that you also change the frame processing pool size to a compatible value.
@@ -175,7 +172,6 @@ cameraView.setFrameProcessingPoolSize(3);
 |`frame.getRotation()`|`int`|The rotation that should be applied to the byte array in order to see what the user sees.|
 |`frame.getSize()`|`Size`|The frame size, before any rotation is applied, to access data.|
 |`frame.getFormat()`|`int`|The frame `ImageFormat`. Defaults to `ImageFormat.NV21` for Camera1 and `ImageFormat.YUV_420_888` for Camera2.|
-|`frame.freeze()`|`Frame`|Clones this frame and makes it immutable. Can be expensive because requires copying the byte array.|
 |`frame.release()`|`-`|Disposes the content of this frame. Should be used on frozen frames to release memory.|
 
 

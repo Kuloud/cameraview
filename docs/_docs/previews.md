@@ -9,11 +9,8 @@ disqus: 1
 ### Engine
 
 CameraView can interact with the camera sensor through the old Android interface typically referred
-as `CAMERA1`, and more recently, also through the more modern interface called `CAMERA2`, for API level 21 (Lollipop).
-
-Being more recent, the latter received less testing and feedback. As such, to enable it, you
-are required to also set the experimental flag on: `app:cameraExperimental="true"`. On devices older
-than Lollipop, the engine will always be `Engine.CAMERA1`.
+as `CAMERA1`, and more recently, also through the more modern interface called `CAMERA2`, for API
+level 21 (Lollipop).
 
 |Engine|API Level|Info|
 |------|---------|----|

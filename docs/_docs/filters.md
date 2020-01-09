@@ -6,12 +6,12 @@ order: 12
 disqus: 1
 ---
 
-Starting from version `2.1.0`, CameraView experimentally supports real-time filters that can modify
-the camera frames before they are shown and recorded. Just like [overlays](watermarks-and-overlays),
-these filters are applied to the preview and to any [picture or video snapshots](capturing-media).
+CameraView experimentally supports real-time filters that can modify the camera frames before they
+are shown and recorded. Just like [overlays](watermarks-and-overlays), these filters are applied to
+the preview and to any [picture or video snapshots](capturing-media).
 
-Starting from `2.5.0`, this feature is considered to be stable and you do not need the experimental 
-flag to use it. The only condition is to use the `Preview.GL_SURFACE` preview.
+This feature is considered to be stable and the only condition is to use the `Preview.GL_SURFACE`
+preview.
 
 ### Simple usage
 

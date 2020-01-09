@@ -153,8 +153,6 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
     private GridLinesLayout mGridLinesLayout;
     private MarkerLayout mMarkerLayout;
     private boolean mKeepScreenOn;
-    @SuppressWarnings({"FieldCanBeLocal", "unused"})
-    private boolean mExperimental;
     private boolean mInEditor;
 
     // Overlays
@@ -187,7 +185,6 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
                 DEFAULT_PLAY_SOUNDS);
         boolean useDeviceOrientation = a.getBoolean(
                 R.styleable.CameraView_cameraUseDeviceOrientation, DEFAULT_USE_DEVICE_ORIENTATION);
-        mExperimental = a.getBoolean(R.styleable.CameraView_cameraExperimental, false);
         mRequestPermissions = a.getBoolean(R.styleable.CameraView_cameraRequestPermissions,
                 DEFAULT_REQUEST_PERMISSIONS);
         mPreview = controls.getPreview();
@@ -340,9 +337,7 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
     @NonNull
     protected CameraEngine instantiateCameraEngine(@NonNull Engine engine,
                                                    @NonNull CameraEngine.Callback callback) {
-        if (mExperimental
-                && engine == Engine.CAMERA2
-                && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if (engine == Engine.CAMERA2 && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             return new Camera2Engine(callback);
         } else {
             mEngine = Engine.CAMERA1;
@@ -846,15 +841,6 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
     //endregion
 
     //region Public APIs for controls
-
-    /**
-     * Sets the experimental flag which occasionally can enable
-     * new, unstable beta features.
-     * @param experimental true to enable new features
-     */
-    public void setExperimental(boolean experimental) {
-        mExperimental = experimental;
-    }
 
     /**
      * Shorthand for the appropriate set* method.
